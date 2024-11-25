@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="panePrincipal" fx:id="panePrincipal" prefHeight="614.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Datos_Piloto">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="21.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Lbl_NombreCompleto" layoutX="21.0" layoutY="108.0" text="NOMBRE COMPLETO" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ImgView_ImgPiloto" fitHeight="377.0" fitWidth="227.0" layoutX="397.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="21.0" layoutY="177.0" styleClass="labelRosa" text="Numero" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="242.0" prefHeight="30.0" prefWidth="90.0" styleClass="labelRosa" text="Equipo" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="299.0" styleClass="labelRosa" text="Peso" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="355.0" styleClass="labelRosa" text="Altura" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="412.0" styleClass="labelRosa" text="Nacionalidad" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ImgView_Bandera" fitHeight="49.0" fitWidth="83.0" layoutX="206.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="Lbl_Numero" layoutX="149.0" layoutY="177.0" text="NUM" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Btn_MenuPrincipal" layoutX="21.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleMenuPrincipalBtnAction" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menu Principal" />
+      <Label fx:id="Lbl_Equipo" layoutX="149.0" layoutY="242.0" text="EQP" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lbl_Peso" layoutX="149.0" layoutY="299.0" text="KG" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lbl_Altura" layoutX="149.0" layoutY="355.0" text="CM" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Btn_Volver" layoutX="488.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleVolverBtnAction" prefHeight="57.0" prefWidth="136.0" styleClass="botonVentanaPrincipal" text="Volver" />
+   </children>
+   <stylesheets>
+      <URL value="@Estilo_datos_piloto.css" />
+      <URL value="@Estilo_General.css" />
+   </stylesheets>
+</AnchorPane>

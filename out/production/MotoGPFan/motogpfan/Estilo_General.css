@@ -1,0 +1,6 @@
+.botonVentanaPrincipal{
+    -fx-background-color: #FF0000;
+    -fx-border-radius: 20px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px;
+}

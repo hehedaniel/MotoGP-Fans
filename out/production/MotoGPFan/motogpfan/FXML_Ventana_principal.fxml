@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Ventana_principal">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Ventana_principal">
     <children>
-        <Button fx:id="Btn_Vitalidad" layoutX="52.0" layoutY="153.0" onAction="#handleVitalidadBtnAction" prefHeight="26.0" prefWidth="84.0" text="Vitalidad" />
-      <Button fx:id="Btn_Serenidad" layoutX="213.0" layoutY="153.0" onAction="#handleSerenidadBtnAction" text="Serenidad" /> 
-      <Button fx:id="Btn_Misterio" layoutX="377.0" layoutY="153.0" onAction="#handleMisterioBtnAction" prefHeight="26.0" prefWidth="84.0" text="Misterio" />
-      <Button fx:id="Btn_Salir" layoutX="377.0" layoutY="272.0" onAction="#handleSalirBtnAction" prefWidth="84.0" text="Salir" />
+      <Button fx:id="Btn_Pilotos" layoutX="31.0" layoutY="36.0" onAction="#handlePilotosBtnAction" prefHeight="76.0" prefWidth="222.0" styleClass="botonVentanaPrincipal" text="Pilotos" />
+      <Button fx:id="Btn_Patrocinadores" layoutX="31.0" layoutY="296.0" onAction="#handlePatrocinadoresBtnAction" prefHeight="76.0" prefWidth="222.0" styleClass="botonVentanaPrincipal" text="Patrocinadores" />
+      <Button fx:id="Btn_Salir" layoutX="648.0" layoutY="296.0" onAction="#handleSalirBtnAction" prefHeight="76.0" prefWidth="121.0" styleClass="botonSalirVentanaPrincipal" text="Salir" />
+      <Button fx:id="Btn_Equipos" layoutX="547.0" layoutY="36.0" onAction="#handleEquiposBtnAction" prefHeight="76.0" prefWidth="222.0" styleClass="botonVentanaPrincipal" text="Equipos" />
     </children>
 </AnchorPane>
