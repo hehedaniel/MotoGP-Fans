@@ -1,0 +1,4 @@
+#panePilotos{
+    -fx-background-image: url('FondoPilotos.png');
+    -fx-background-position: center;
+}
