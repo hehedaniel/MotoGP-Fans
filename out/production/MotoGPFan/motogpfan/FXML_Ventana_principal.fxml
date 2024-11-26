@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Ventana_principal">
+<AnchorPane id="panePrincipal" fx:id="panePrincipal" prefHeight="400.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Ventana_principal">
     <children>
       <Button fx:id="Btn_Pilotos" layoutX="31.0" layoutY="36.0" onAction="#handlePilotosBtnAction" prefHeight="76.0" prefWidth="222.0" styleClass="botonVentanaPrincipal" text="Pilotos" />
       <Button fx:id="Btn_Patrocinadores" layoutX="31.0" layoutY="296.0" onAction="#handlePatrocinadoresBtnAction" prefHeight="76.0" prefWidth="222.0" styleClass="botonVentanaPrincipal" text="Patrocinadores" />
-      <Button fx:id="Btn_Salir" layoutX="648.0" layoutY="296.0" onAction="#handleSalirBtnAction" prefHeight="76.0" prefWidth="121.0" styleClass="botonSalirVentanaPrincipal" text="Salir" />
-      <Button fx:id="Btn_Equipos" layoutX="547.0" layoutY="36.0" onAction="#handleEquiposBtnAction" prefHeight="76.0" prefWidth="222.0" styleClass="botonVentanaPrincipal" text="Equipos" />
+      <Button fx:id="Btn_Salir" layoutX="596.0" layoutY="296.0" onAction="#handleSalirBtnAction" prefHeight="76.0" prefWidth="121.0" styleClass="botonSalirVentanaPrincipal" text="Salir" />
+      <Button fx:id="Btn_Equipos" layoutX="495.0" layoutY="36.0" onAction="#handleEquiposBtnAction" prefHeight="76.0" prefWidth="222.0" styleClass="botonVentanaPrincipal" text="Equipos" />
     </children>
+   <stylesheets>
+      <URL value="@Estilo_General.css" />
+      <URL value="@Estilo_Ventana_Principal.css" />
+   </stylesheets>
 </AnchorPane>

@@ -55,13 +55,49 @@ public class FXML_Ventana_principal implements Initializable {
 
     @FXML
     public void handleEquiposBtnAction(ActionEvent actionEvent) {
+        try{
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_Ventana_equipos.fxml"))));
+            stage.show();
+
+            Stage stage2 = (Stage) Btn_Equipos.getScene().getWindow();
+            stage2.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     public void handlePilotosBtnAction(ActionEvent actionEvent) {
+        try{
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_datos_piloto.fxml"))));
+            stage.show();
+
+            Stage stage2 = (Stage) Btn_Pilotos.getScene().getWindow();
+            stage2.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     public void handlePatrocinadoresBtnAction(ActionEvent actionEvent) {
+        try{
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_Ventana_patrocinadores.fxml"))));
+            stage.show();
+
+            Stage stage2 = (Stage) Btn_Patrocinadores.getScene().getWindow();
+            stage2.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

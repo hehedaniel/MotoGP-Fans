@@ -1,0 +1,11 @@
+.botonSalirVentanaPrincipal{
+    -fx-background-color: #000000;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 22px;
+}
+
+#panePrincipal{
+    -fx-background-image: url('Moto-GP-Fondo.png');
+    -fx-background-position: center;
+}
