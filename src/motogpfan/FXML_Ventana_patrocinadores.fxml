@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="panePatrocinadores" fx:id="anchorPane" prefHeight="616.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Ventana_patrocinadores">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="23.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Btn_MenuPrincipal" layoutX="14.0" layoutY="525.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú Principal" />
+      <ImageView fx:id="ImgView_Patrocinador1" fitHeight="87.0" fitWidth="136.0" layoutX="31.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador2" fitHeight="87.0" fitWidth="136.0" layoutX="188.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador3" fitHeight="87.0" fitWidth="136.0" layoutX="342.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador4" fitHeight="87.0" fitWidth="136.0" layoutX="499.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador5" fitHeight="87.0" fitWidth="136.0" layoutX="31.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador6" fitHeight="87.0" fitWidth="136.0" layoutX="188.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador7" fitHeight="87.0" fitWidth="136.0" layoutX="342.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador8" fitHeight="87.0" fitWidth="136.0" layoutX="499.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador9" fitHeight="87.0" fitWidth="136.0" layoutX="31.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador10" fitHeight="87.0" fitWidth="136.0" layoutX="188.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador11" fitHeight="87.0" fitWidth="136.0" layoutX="342.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Patrocinador12" fitHeight="87.0" fitWidth="136.0" layoutX="499.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="@Estilo_General.css" />
+      <URL value="@Estilo_patrocinadores.css" />
+   </stylesheets>
+</AnchorPane>

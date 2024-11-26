@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="panePrincipal" fx:id="panePrincipal" prefHeight="614.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Datos_Piloto">
+<AnchorPane id="paneDatosPiloto" fx:id="paneDatosPiloto" prefHeight="614.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Datos_Piloto">
    <children>
       <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="21.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
