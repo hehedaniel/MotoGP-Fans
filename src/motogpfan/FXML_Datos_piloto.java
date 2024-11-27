@@ -1,6 +1,7 @@
 package motogpfan;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -15,34 +16,31 @@ import java.sql.*;
 
 public class FXML_Datos_piloto
 {
-    @javafx.fxml.FXML
+    @FXML
     private ImageView ImgView_Bandera;
-    @javafx.fxml.FXML
+    @FXML
     private Button Btn_Volver;
-    @javafx.fxml.FXML
+    @FXML
     private Button Btn_MenuPrincipal;
-    @javafx.fxml.FXML
+    @FXML
     private Label Lbl_Peso;
-    @javafx.fxml.FXML
+    @FXML
     private Label Lbl_Equipo;
-    @javafx.fxml.FXML
+    @FXML
     private Label Lbl_Altura;
-    @javafx.fxml.FXML
+    @FXML
     private AnchorPane paneDatosPiloto;
-    @javafx.fxml.FXML
+    @FXML
     private Label Lbl_NombreCompleto;
-    @javafx.fxml.FXML
+    @FXML
     private Label Lbl_Numero;
-    @javafx.fxml.FXML
+    @FXML
     private ImageView ImgView_ImgPiloto;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
 
-        //Pillo un teorico id del componente padre
-        //        int idPilotoMostrar = FXML_Ventana_pilotos.idPilotoMostrar;
-
-        //        Peticion a bbdd y recogemos los pulotos
+        int idPilotoMostrar = FXML_Ventana_pilotos.idPilotoSeleccionado;
 
         Connection co;
         Statement stm;
@@ -53,7 +51,7 @@ public class FXML_Datos_piloto
             co = DriverManager.getConnection("jdbc:mysql://localhost:3306/PruebaMotoGPFan", "root", "Pestillo1@");
             stm = co.createStatement();
 
-            ResultSet rs = stm.executeQuery("SELECT * from Piloto WHERE idPiloto = 93");
+            ResultSet rs = stm.executeQuery("SELECT * from Piloto WHERE idPiloto = " + idPilotoMostrar + ";");
 
             rs.next();
 
@@ -71,37 +69,17 @@ public class FXML_Datos_piloto
         }
     }
 
-    @javafx.fxml.FXML
-    public void handleMenuPrincipalBtnAction(ActionEvent actionEvent) {
-        try{
-//            Parent root;
-//            Segun ernesto
+    @FXML
+    public void handleMenuPrincipalBtnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_Ventana_principal.fxml"))));
+        stage.show();
 
-//            root = FXMLLoader.load(getClass().getResource("Ventana_principal.fxml"));
-//            Scene scene = new Scene(root);
-
-//            Stage stage = new Stage();
-//            stage.setScene(scene);
-//            stage.show();
-//
-//            Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
-//            stage2.close();
-
-//            Probar
-
-            Stage stage = new Stage();
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_Ventana_principal.fxml"))));
-            stage.show();
-
-            Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
-            stage2.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
+        stage2.close();
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleVolverBtnAction(ActionEvent actionEvent) throws IOException {
         Stage stage = new Stage();
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_Ventana_pilotos.fxml"))));

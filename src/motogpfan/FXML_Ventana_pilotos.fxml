@@ -17,115 +17,115 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Piloto1" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto1" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto10" fitHeight="188.0" fitWidth="113.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto10" fitHeight="188.0" fitWidth="113.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto19" fitHeight="188.0" fitWidth="113.0" layoutX="10.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@PilotoProvisional.png" />
-                     </image></ImageView>
-               </children></VBox>
-            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
-               <children>
-                  <ImageView fx:id="ImgView_Piloto2" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@PilotoProvisional.png" />
-                     </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto11" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@PilotoProvisional.png" />
-                     </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto20" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto19" fitHeight="188.0" fitWidth="113.0" layoutX="10.0" layoutY="198.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Piloto3" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto2" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto12" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto11" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto21" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto20" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto3" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto12" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto21" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Piloto4" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto4" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto13" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto13" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto22" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto22" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Piloto5" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto5" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto14" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto14" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Piloto6" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto6" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto15" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto15" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Piloto7" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto7" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto16" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto16" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="160.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Piloto8" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto8" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto17" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto17" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="185.0" layoutY="10.0" prefHeight="200.0" prefWidth="81.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Piloto9" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto9" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Piloto18" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Piloto18" fitHeight="188.0" fitWidth="113.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@PilotoProvisional.png" />
                      </image></ImageView>

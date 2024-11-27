@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="531.0" prefWidth="1059.0" style="-fx-background-color: #6F6F6F;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_datos_patrocinador">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image></ImageView>
+      <ImageView id="logoPatrocinador" fx:id="ImgView_logoPatrocinador" fitHeight="150.0" fitWidth="150.0" layoutX="266.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoAprilia.svg.png" />
+         </image>
+      </ImageView>
+      <Label id="descripcionPatrocinador" fx:id="Lbl_Descripcion" alignment="TOP_LEFT" layoutX="57.0" layoutY="218.0" prefHeight="180.0" prefWidth="568.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Btn_MenuPrincipal" layoutX="47.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleBtnMenuPrincipalAction" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú principal" />
+      <Button fx:id="Btn_Volver" layoutX="884.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleBtnVolverAction" prefHeight="57.0" prefWidth="136.0" styleClass="botonVentanaPrincipal" text="Volver" />
+      <Line endX="207.6561737060547" endY="-2.190358877182007" layoutX="632.0" layoutY="253.0" rotate="90.0" startX="-100.0" stroke="#303030" strokeWidth="2.0" />
+      <ListView fx:id="LV_Pilotos" layoutX="760.0" layoutY="153.0" prefHeight="251.0" prefWidth="239.0" style="-fx-background-color: #6F6F6F;" />
+      <Label id="descripcionPatrocinador" fx:id="Lbl_Descripcion1" alignment="TOP_LEFT" layoutX="754.0" layoutY="101.0" prefHeight="35.0" prefWidth="261.0" text="Pilotos patrocinados" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@Estilo_General.css" />
+      <URL value="@Estilo_datos_patrocinador.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,6 +1,7 @@
 package motogpfan;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -12,10 +13,17 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class FXML_Ventana_pilotos
 {
+
+    private List<Integer> idPilotos = new ArrayList<>();
+
+    public static int idPilotoSeleccionado = -1;
+
     @FXML
     private ImageView ImgView_Piloto12;
     @FXML
@@ -83,8 +91,8 @@ public class FXML_Ventana_pilotos
             int n = 0;
 
             while (rs.next()){
+                idPilotos.add(rs.getInt("idPiloto"));
                 arrayImgViewPilotos[n].setImage(new Image(rs.getString("foto")));
-//                arrayImgViewPilotos[n].setImage(new Image("https://resources.motogp.pulselive.com/photo-resources/2024/11/19/24001b82-1348-4f36-adc4-4701d07ea673/89-Jorge-Martin.png?height=377&width=227"));
                 n++;
             }
         } catch (ClassNotFoundException e) {
@@ -103,5 +111,19 @@ public class FXML_Ventana_pilotos
             Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
             stage2.close();
 
+    }
+
+    @FXML
+    public void handleImgViewClickedAction(Event event) throws IOException {
+        String id = ((ImageView) event.getSource()).getId().split("ImgView_Piloto")[1];
+
+        idPilotoSeleccionado = idPilotos.get(Integer.parseInt(id)-1);
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_datos_piloto.fxml"))));
+        stage.show();
+
+        Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
+        stage2.close();
     }
 }

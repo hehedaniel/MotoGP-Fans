@@ -1,79 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="paneEquipos" fx:id="paneEquipos" prefHeight="685.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Ventana_equipos">
+<AnchorPane id="paneEquipos" fx:id="paneEquipos" prefHeight="685.0" prefWidth="1123.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Ventana_equipos">
    <children>
       <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="48.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@LogoMotoGP.png" />
          </image></ImageView>
-      <Button fx:id="Btn_MenuPrincipal" layoutX="531.0" layoutY="594.0" mnemonicParsing="false" onAction="#handleBtnMenuPrincipalAction" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú Principal" />
+      <Button fx:id="Btn_MenuPrincipal" layoutX="459.0" layoutY="588.0" mnemonicParsing="false" onAction="#handleBtnMenuPrincipalAction" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú Principal" />
       <HBox layoutX="34.0" layoutY="129.0" minHeight="316.0" minWidth="1040.0">
          <children>
-            <VBox alignment="TOP_CENTER" maxHeight="50.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+            <VBox alignment="TOP_CENTER" maxHeight="330.0" prefHeight="330.0" prefWidth="211.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo10" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/aprilia.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo6" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo5" fitHeight="164.0" fitWidth="164.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/pertamina.png" />
+                     </image></ImageView>
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Equipo9" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Equipo/ducati.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Equipo7" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Equipo/prima_pramac.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo8" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/gresini.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo7" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo3" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
-                     </image></ImageView>
-               </children></VBox>
-            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
-               <children>
-                  <ImageView fx:id="ImgView_Equipo3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@LogoAprilia.svg.png" />
-                     </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo8" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/redbull_factory.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo1" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/honda_lcr.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo9" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo11" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/redbull_tech3.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="160.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo4" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/monster_yamaha.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo10" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo2" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/repsol.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="842.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo11" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo6" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@LogoAprilia.svg.png" />
+                        <Image url="@Equipo/trackhouse.png" />
                      </image>
                   </ImageView>
                </children>

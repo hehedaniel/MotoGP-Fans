@@ -42,7 +42,7 @@ public class FXML_Ventana_patrocinadores
 
     @FXML
     public void initialize() {
-
+/*
         ImageView[] arrayImgViewPatrocinadores = {ImgView_Patrocinador1, ImgView_Patrocinador2, ImgView_Patrocinador3, ImgView_Patrocinador4, ImgView_Patrocinador5, ImgView_Patrocinador6, ImgView_Patrocinador7, ImgView_Patrocinador8, ImgView_Patrocinador9,ImgView_Patrocinador10};
 
         Connection co;
@@ -67,6 +67,8 @@ public class FXML_Ventana_patrocinadores
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        */
+
     }
 
     @FXML
