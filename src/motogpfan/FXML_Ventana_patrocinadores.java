@@ -58,7 +58,8 @@ public class FXML_Ventana_patrocinadores
             int n = 0;
 
             while (rs.next()){
-                arrayImgViewPatrocinadores[n].setImage(new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ducati_red_logo.svg/1931px-Ducati_red_logo.svg.png"));
+                arrayImgViewPatrocinadores[n].setImage(new Image(rs.getString("logo")));
+//                arrayImgViewPatrocinadores[n].setImage(new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ducati_red_logo.svg/1931px-Ducati_red_logo.svg.png"));
                 n++;
             }
         } catch (ClassNotFoundException e) {
@@ -69,18 +70,12 @@ public class FXML_Ventana_patrocinadores
     }
 
     @FXML
-    public void handleMenuPrincipalBtnAction(ActionEvent actionEvent) {
-        try{
-
+    public void handleMenuPrincipalBtnAction(ActionEvent actionEvent) throws IOException {
             Stage stage = new Stage();
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_Ventana_principal.fxml"))));
             stage.show();
 
             Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
             stage2.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="paneDatosEquipo" fx:id="paneDatosEquipo" prefHeight="443.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_datos_equipo">
+   <stylesheets>
+      <URL value="@Estilo_General.css" />
+      <URL value="@Estilo_datos_equipo.css" />
+   </stylesheets>
+</AnchorPane>

@@ -12,7 +12,7 @@
             <Image url="@LogoMotoGP.png" />
          </image>
       </ImageView>
-      <Button layoutX="47.0" layoutY="812.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú Principal" />
+      <Button fx:id="Btn_MenuPrincipal" layoutX="523.0" layoutY="795.0" mnemonicParsing="false" onAction="#handleMenuPrincipalBtnAction" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú Principal" />
       <HBox layoutX="51.0" layoutY="117.0" prefHeight="650.0" prefWidth="1149.0">
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">

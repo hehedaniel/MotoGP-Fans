@@ -1,14 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import java.net.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="motogpfan.FXML_Ventana_pilotos"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane id="panePilotos" fx:id="panePilotos" prefHeight="900.0" prefWidth="1251.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_Ventana_pilotos">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Btn_MenuPrincipal" layoutX="523.0" layoutY="795.0" mnemonicParsing="false" onAction="#handleMenuPrincipalBtnAction" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú Principal" />
+      <HBox layoutX="51.0" layoutY="117.0" prefHeight="650.0" prefWidth="1149.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto1" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto10" fitHeight="188.0" fitWidth="113.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto19" fitHeight="188.0" fitWidth="113.0" layoutX="10.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto2" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto11" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto20" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto3" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto12" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto21" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto4" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto13" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto22" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto5" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto14" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto6" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto15" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto7" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto16" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="160.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto8" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto17" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" layoutX="185.0" layoutY="10.0" prefHeight="200.0" prefWidth="81.0" spacing="30.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="ImgView_Piloto9" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="ImgView_Piloto18" fitHeight="188.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PilotoProvisional.png" />
+                     </image></ImageView>
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@Estilo_General.css" />
+      <URL value="@Estilo_pilotos.css" />
+   </stylesheets>
 </AnchorPane>

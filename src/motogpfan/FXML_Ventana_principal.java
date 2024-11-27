@@ -74,7 +74,7 @@ public class FXML_Ventana_principal implements Initializable {
         try{
 
             Stage stage = new Stage();
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_datos_piloto.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_Ventana_pilotos.fxml"))));
             stage.show();
 
             Stage stage2 = (Stage) Btn_Pilotos.getScene().getWindow();

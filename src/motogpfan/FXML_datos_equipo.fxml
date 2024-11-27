@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="paneDatosEquipo" fx:id="paneDatosEquipo" prefHeight="716.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="motogpfan.FXML_datos_equipo">
+   <stylesheets>
+      <URL value="@Estilo_General.css" />
+      <URL value="@Estilo_datos_equipo.css" />
+   </stylesheets>
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Piloto1" fitHeight="194.0" fitWidth="136.0" layoutX="105.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PilotoProvisional.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_LogoEquipo" fitHeight="87.0" fitWidth="136.0" layoutX="396.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMotoGP.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgView_Piloto2" fitHeight="194.0" fitWidth="136.0" layoutX="695.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PilotoProvisional.png" />
+         </image>
+      </ImageView>
+      <Label id="descripcionEquipo" fx:id="Lbl_descripcionEquipo" alignment="TOP_LEFT" layoutX="71.0" layoutY="382.0" prefHeight="194.0" prefWidth="773.0" text="TEXTAZO HISTORICO" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Btn_MenuPrincipal" layoutX="355.0" layoutY="602.0" mnemonicParsing="false" onAction="#handleBtnMenuPrincipal" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú principal" />
+   </children>
+</AnchorPane>
