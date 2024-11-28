@@ -39,16 +39,20 @@ public class FXML_datos_equipo
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/PruebaMotoGPFan", "root", "Pestillo1@");
+            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/MotoGPFan", "root", "Pestillo1@");
             stm = co.createStatement();
 
             ResultSet rs = stm.executeQuery("SELECT * from Equipo WHERE idEquipo = " + idEquipoMostrar + ";");
 
             rs.next();
 
-            // TODO: falta poner en la bd la ruta en local
-            //ImgView_LogoEquipo.setImage(new Image(rs.getString("logo")));
             Lbl_descripcionEquipo.setText(rs.getString("descripcion"));
+
+            String nombre = rs.getString("nombre").toLowerCase();
+
+            String ruta = "assets/Equipo/" + nombre.replace(" ", "_") + ".png";
+
+            ImgView_LogoEquipo.setImage(new Image(ruta));
 
             rs.close();
 

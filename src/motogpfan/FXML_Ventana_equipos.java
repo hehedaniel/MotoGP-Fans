@@ -48,7 +48,33 @@ public class FXML_Ventana_equipos
 
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException{
+        ImageView[] arrayImgViewEquipos = {ImgView_Equipo1, ImgView_Equipo2, ImgView_Equipo3, ImgView_Equipo4, ImgView_Equipo5, ImgView_Equipo6, ImgView_Equipo7, ImgView_Equipo8, ImgView_Equipo9,ImgView_Equipo10, ImgView_Equipo11};
 
+        Connection co;
+        Statement stm;
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/MotoGPFan", "root", "Pestillo1@");
+            stm = co.createStatement();
+
+            ResultSet rs = stm.executeQuery("SELECT nombre from Equipo");
+            int n = 0;
+
+            while (rs.next()){
+                String nombre = rs.getString("nombre").toLowerCase();
+
+                String ruta = "assets/Equipo/" + nombre.replace(" ", "_") + ".png";
+
+                arrayImgViewEquipos[n].setImage(new Image(ruta));
+                n++;
+            }
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML

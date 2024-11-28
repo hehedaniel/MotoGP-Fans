@@ -48,7 +48,7 @@ public class FXML_Datos_piloto
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/PruebaMotoGPFan", "root", "Pestillo1@");
+            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/MotoGPFan", "root", "Pestillo1@");
             stm = co.createStatement();
 
             ResultSet rs = stm.executeQuery("SELECT * from Piloto WHERE idPiloto = " + idPilotoMostrar + ";");

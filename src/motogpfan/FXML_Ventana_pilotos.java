@@ -84,10 +84,10 @@ public class FXML_Ventana_pilotos
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/PruebaMotoGPFan", "root", "Pestillo1@");
+            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/MotoGPFan", "root", "Pestillo1@");
             stm = co.createStatement();
 
-            ResultSet rs = stm.executeQuery("SELECT * from Piloto");
+            ResultSet rs = stm.executeQuery("SELECT foto, idPiloto from Piloto");
             int n = 0;
 
             while (rs.next()){

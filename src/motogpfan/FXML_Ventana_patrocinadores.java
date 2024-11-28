@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.Locale;
 
 public class FXML_Ventana_patrocinadores
 {
@@ -42,7 +43,9 @@ public class FXML_Ventana_patrocinadores
 
     @FXML
     public void initialize() {
-/*
+
+
+
         ImageView[] arrayImgViewPatrocinadores = {ImgView_Patrocinador1, ImgView_Patrocinador2, ImgView_Patrocinador3, ImgView_Patrocinador4, ImgView_Patrocinador5, ImgView_Patrocinador6, ImgView_Patrocinador7, ImgView_Patrocinador8, ImgView_Patrocinador9,ImgView_Patrocinador10};
 
         Connection co;
@@ -51,15 +54,15 @@ public class FXML_Ventana_patrocinadores
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/PruebaMotoGPFan", "root", "Pestillo1@");
+            co = DriverManager.getConnection("jdbc:mysql://localhost:3306/MotoGPFan", "root", "Pestillo1@");
             stm = co.createStatement();
 
-            ResultSet rs = stm.executeQuery("SELECT * from Patrocinador");
+            ResultSet rs = stm.executeQuery("SELECT nombre from Patrocinador");
             int n = 0;
 
             while (rs.next()){
-                arrayImgViewPatrocinadores[n].setImage(new Image(rs.getString("logo")));
-//                arrayImgViewPatrocinadores[n].setImage(new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ducati_red_logo.svg/1931px-Ducati_red_logo.svg.png"));
+                String ruta = "assets/Patrocinador/" + rs.getString("nombre").toLowerCase().replace(" ", "_") + ".png";
+                arrayImgViewPatrocinadores[n].setImage(new Image(ruta));
                 n++;
             }
         } catch (ClassNotFoundException e) {
@@ -67,7 +70,6 @@ public class FXML_Ventana_patrocinadores
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        */
 
     }
 
