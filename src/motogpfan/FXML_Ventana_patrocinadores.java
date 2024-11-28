@@ -1,6 +1,7 @@
 package motogpfan;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,6 +17,8 @@ import java.util.Locale;
 
 public class FXML_Ventana_patrocinadores
 {
+    public static int idPatrocinadorSeleccionado = -1;
+
     @FXML
     private Button Btn_MenuPrincipal;
     @FXML
@@ -81,5 +84,19 @@ public class FXML_Ventana_patrocinadores
 
             Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
             stage2.close();
+    }
+
+    @FXML
+    public void handleImgViewPatrocinadorAction(Event event) throws IOException {
+        String id = ((ImageView) event.getSource()).getId().split("ImgView_Patrocinador")[1];
+
+        idPatrocinadorSeleccionado = Integer.parseInt(id);
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_datos_patrocinador.fxml"))));
+        stage.show();
+
+        Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
+        stage2.close();
     }
 }

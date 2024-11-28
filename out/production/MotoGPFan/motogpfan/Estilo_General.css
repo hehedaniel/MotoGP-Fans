@@ -9,3 +9,9 @@
     -fx-text-fill: #FFFFFF;
     -fx-font-size: 22px;
 }
+
+.botonVentanaPrincipal:hover{
+    -fx-cursor: hand;
+    -fx-background-color: blue;
+    
+}

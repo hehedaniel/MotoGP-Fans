@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -56,21 +57,38 @@ public class FXML_datos_patrocinador
     }
 
     private void cargarLista() throws ClassNotFoundException, SQLException {
+        int idPatrocinadorMostrar = FXML_Ventana_patrocinadores.idPatrocinadorSeleccionado;
+
         Connection co;
         Statement stm;
 
         Class.forName("com.mysql.cj.jdbc.Driver");
 
-        co = DriverManager.getConnection("jdbc:mysql://localhost:3306/PruebaMotoGPFan", "root", "Pestillo1@");
+        co = DriverManager.getConnection("jdbc:mysql://localhost:3306/MotoGPFan", "root", "Pestillo1@");
         stm = co.createStatement();
 
-        // TODO: poner lo del id en el idPatrocinador y poner los datos del patrocinador (desc y img)
-        ResultSet rs = stm.executeQuery("SELECT * from Piloto P JOIN Piloto_has_Patrocinador PHP ON P.idPiloto = PHP.idPiloto WHERE PHP.idPatrocinador = 2");
+        ResultSet rs = stm.executeQuery("SELECT nombre, apellido from Piloto P JOIN Piloto_has_Patrocinador PHP ON P.idPiloto = PHP.idPiloto WHERE PHP.idPatrocinador = " + idPatrocinadorMostrar + ";");
 
         ObservableList<String> items = FXCollections.observableArrayList();
         while (rs.next()) {
             items.add(rs.getString("nombre") + " " + rs.getString("apellido"));
         }
+
+        rs.close();
+
+
+        ResultSet rsPatrocinador = stm.executeQuery("SELECT descripcion, nombre FROM Patrocinador WHERE idPatrocinador = " + idPatrocinadorMostrar + ";");
+
+        rsPatrocinador.next();
+
+        String ruta = "assets/Patrocinador/" + rsPatrocinador.getString("nombre").toLowerCase().replace(" ", "_") + ".png";
+        ImgView_logoPatrocinador.setImage(new Image(ruta));
+        Lbl_Descripcion.setText(rsPatrocinador.getString("descripcion"));
+
+        rsPatrocinador.close();
+
+        stm.close();
+        co.close();
 
         LV_Pilotos.setItems(items);
     }

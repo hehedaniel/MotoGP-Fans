@@ -5,6 +5,10 @@
     -fx-font-size: 22px;
 }
 
+.botonSalirVentanaPrincipal:hover{
+    -fx-cursor: hand;
+}
+
 #panePrincipal{
     -fx-background-image: url('Moto-GP-Fondo.png');
     -fx-background-position: center;

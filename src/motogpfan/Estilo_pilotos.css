@@ -2,3 +2,9 @@
     -fx-background-image: url('FondoPilotos.png');
     -fx-background-position: center;
 }
+
+ImageView:hover{
+    -fx-cursor: hand;
+    -fx-rotate: 180;
+    -fx-scale-x: 3;
+}
