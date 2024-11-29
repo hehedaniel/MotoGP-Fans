@@ -17,11 +17,11 @@
          <children>
             <VBox alignment="TOP_CENTER" maxHeight="330.0" prefHeight="330.0" prefWidth="211.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo10" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo10" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/aprilia.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo5" fitHeight="164.0" fitWidth="164.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo5" fitHeight="164.0" fitWidth="164.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/pertamina.png" />
                      </image></ImageView>
@@ -31,51 +31,51 @@
                </padding></VBox>
             <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo9" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo9" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/ducati.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo7" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo7" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/prima_pramac.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo8" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo8" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/gresini.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo3" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo3" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/redbull_factory.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo1" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo1" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/honda_lcr.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo11" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo11" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/redbull_tech3.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="160.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo4" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo4" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/monster_yamaha.png" />
                      </image></ImageView>
-                  <ImageView fx:id="ImgView_Equipo2" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo2" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/repsol.png" />
                      </image></ImageView>
                </children></VBox>
             <VBox alignment="TOP_CENTER" layoutX="842.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Equipo6" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImgView_Equipo6" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleImgViewClickedAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
                      <image>
                         <Image url="@Equipo/trackhouse.png" />
                      </image>

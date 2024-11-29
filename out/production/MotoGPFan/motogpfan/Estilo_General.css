@@ -13,5 +13,15 @@
 .botonVentanaPrincipal:hover{
     -fx-cursor: hand;
     -fx-background-color: blue;
-    
+}
+
+.imagenClickable{
+    -fx-z-index: -1;
+}
+
+.imagenClickable:hover{
+    -fx-cursor: hand;
+    -fx-scale-x: 2;
+    -fx-scale-y: 2;
+    -fx-z-index: 10;
 }

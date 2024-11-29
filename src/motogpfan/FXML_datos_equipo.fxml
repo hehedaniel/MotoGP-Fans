@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
@@ -22,11 +23,6 @@
             <Image url="@PilotoProvisional.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="ImgView_LogoEquipo" fitHeight="87.0" fitWidth="136.0" layoutX="396.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@LogoMotoGP.png" />
-         </image>
-      </ImageView>
       <ImageView fx:id="ImgView_Piloto2" fitHeight="194.0" fitWidth="136.0" layoutX="695.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@PilotoProvisional.png" />
@@ -37,6 +33,23 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="Btn_MenuPrincipal" layoutX="355.0" layoutY="602.0" mnemonicParsing="false" onAction="#handleBtnMenuPrincipal" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú principal" />
+      <Button fx:id="Btn_MenuPrincipal" layoutX="71.0" layoutY="599.0" mnemonicParsing="false" onAction="#handleBtnMenuPrincipal" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú principal" />
+      <HBox layoutX="308.0" layoutY="153.0" prefHeight="214.0" prefWidth="315.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="ImgView_LogoEquipo" fitHeight="167.0" fitWidth="273.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@LogoMotoGP.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="Btn_Volver" layoutX="702.0" layoutY="599.0" mnemonicParsing="false" onAction="#handleVolverPrincipal" prefHeight="57.0" prefWidth="142.0" styleClass="botonVentanaPrincipal" text="Volver" />
    </children>
 </AnchorPane>

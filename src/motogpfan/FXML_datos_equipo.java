@@ -28,6 +28,8 @@ public class FXML_datos_equipo
     private Button Btn_MenuPrincipal;
     @FXML
     private Label Lbl_descripcionEquipo;
+    @FXML
+    private Button Btn_Volver;
 
     @FXML
     public void initialize() {
@@ -88,6 +90,16 @@ public class FXML_datos_equipo
         stage.show();
 
         Stage stage2 = (Stage) Btn_MenuPrincipal.getScene().getWindow();
+        stage2.close();
+    }
+
+    @FXML
+    public void handleVolverPrincipal(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("FXML_Ventana_equipos.fxml"))));
+        stage.show();
+
+        Stage stage2 = (Stage) Btn_Volver.getScene().getWindow();
         stage2.close();
     }
 }
