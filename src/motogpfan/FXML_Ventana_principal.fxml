@@ -12,7 +12,7 @@
       <Button fx:id="Btn_Equipos" layoutX="495.0" layoutY="36.0" onAction="#handleEquiposBtnAction" prefHeight="76.0" prefWidth="222.0" styleClass="botonVentanaPrincipal" text="Equipos" />
     </children>
    <stylesheets>
-      <URL value="@Estilo_General.css" />
-      <URL value="@Estilo_Ventana_Principal.css" />
+      <URL value="@styles/Estilo_General.css" />
+      <URL value="@styles/Estilo_Ventana_Principal.css" />
    </stylesheets>
 </AnchorPane>

@@ -11,11 +11,11 @@
    <children>
       <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@LogoMotoGP.png" />
+            <Image url="@../assets/LogoMotoGP.png" />
          </image></ImageView>
       <ImageView id="logoPatrocinador" fx:id="ImgView_logoPatrocinador" fitHeight="150.0" fitWidth="150.0" layoutX="266.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@LogoAprilia.svg.png" />
+            <Image url="@../assets/LogoAprilia.svg.png" />
          </image>
       </ImageView>
       <Label id="descripcionPatrocinador" fx:id="Lbl_Descripcion" alignment="TOP_LEFT" layoutX="57.0" layoutY="239.0" prefHeight="165.0" prefWidth="568.0" text="Label" textFill="WHITE">
@@ -34,7 +34,7 @@
       </Label>
    </children>
    <stylesheets>
-      <URL value="@Estilo_General.css" />
-      <URL value="@Estilo_datos_patrocinador.css" />
+      <URL value="@styles/Estilo_General.css" />
+      <URL value="@styles/Estilo_datos_patrocinador.css" />
    </stylesheets>
 </AnchorPane>

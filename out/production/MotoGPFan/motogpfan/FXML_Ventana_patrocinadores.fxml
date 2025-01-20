@@ -10,7 +10,7 @@
    <children>
       <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="23.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@LogoMotoGP.png" />
+            <Image url="@../assets/LogoMotoGP.png" />
          </image>
       </ImageView>
       <Button fx:id="Btn_MenuPrincipal" layoutX="14.0" layoutY="525.0" mnemonicParsing="false" onAction="#handleMenuPrincipalBtnAction" prefHeight="57.0" prefWidth="206.0" styleClass="botonVentanaPrincipal" text="Menú Principal" />
@@ -18,54 +18,22 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Patrocinador1" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/lenovo.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="ImgView_Patrocinador5" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/monster.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="ImgView_Patrocinador9" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/repsol.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="ImgView_Patrocinador1" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
+                  <ImageView fx:id="ImgView_Patrocinador5" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
+                  <ImageView fx:id="ImgView_Patrocinador9" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
                </children>
             </VBox>
             <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="50.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Patrocinador2" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/alpinestarts.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="ImgView_Patrocinador6" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/reb_bull.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="ImgView_Patrocinador10" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/pertamina.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="ImgView_Patrocinador2" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
+                  <ImageView fx:id="ImgView_Patrocinador6" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
+                  <ImageView fx:id="ImgView_Patrocinador10" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
                </children>
             </VBox>
             <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="50.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Patrocinador3" fitHeight="76.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/prima.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="ImgView_Patrocinador7" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/pertronas.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="ImgView_Patrocinador3" fitHeight="76.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
+                  <ImageView fx:id="ImgView_Patrocinador7" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
                </children>
                <padding>
                   <Insets top="30.0" />
@@ -73,23 +41,15 @@
             </VBox>
             <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="50.0" HBox.hgrow="SOMETIMES">
                <children>
-                  <ImageView fx:id="ImgView_Patrocinador4" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/michelin.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="ImgView_Patrocinador8" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable">
-                     <image>
-                        <Image url="@patrocionador/dainese.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="ImgView_Patrocinador4" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
+                  <ImageView fx:id="ImgView_Patrocinador8" fitHeight="87.0" fitWidth="136.0" onMouseClicked="#handleImgViewPatrocinadorAction" pickOnBounds="true" preserveRatio="true" styleClass="imagenClickable" />
                </children>
             </VBox>
          </children>
       </HBox>
    </children>
    <stylesheets>
-      <URL value="@Estilo_General.css" />
-      <URL value="@Estilo_patrocinadores.css" />
+      <URL value="@styles/Estilo_General.css" />
+      <URL value="@styles/Estilo_patrocinadores.css" />
    </stylesheets>
 </AnchorPane>

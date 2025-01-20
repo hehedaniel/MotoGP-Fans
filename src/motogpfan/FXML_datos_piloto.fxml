@@ -10,7 +10,7 @@
    <children>
       <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="21.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@LogoMotoGP.png" />
+            <Image url="@../assets/LogoMotoGP.png" />
          </image>
       </ImageView>
       <Label fx:id="Lbl_NombreCompleto" layoutX="21.0" layoutY="108.0" text="NOMBRE COMPLETO" textFill="WHITE">
@@ -88,7 +88,7 @@
       </VBox>
    </children>
    <stylesheets>
-      <URL value="@Estilo_datos_piloto.css" />
-      <URL value="@Estilo_General.css" />
+      <URL value="@styles/Estilo_datos_piloto.css" />
+      <URL value="@styles/Estilo_General.css" />
    </stylesheets>
 </AnchorPane>

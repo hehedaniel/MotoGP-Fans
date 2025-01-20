@@ -54,7 +54,7 @@ public class FXML_Datos_piloto
             ResultSet rs = stm.executeQuery("SELECT * from Piloto WHERE idPiloto = " + idPilotoMostrar + ";");
 
             rs.next();
-
+            
             Lbl_Peso.setText(rs.getString("peso")+ " kg");
             Lbl_Equipo.setText(rs.getString("idEquipo"));
             Lbl_Altura.setText(rs.getString("altura")+ " cm");

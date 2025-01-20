@@ -10,6 +10,6 @@
 }
 
 #panePrincipal{
-    -fx-background-image: url('Moto-GP-Fondo.png');
+    -fx-background-image: url('../../assets/Moto-GP-Fondo.png');
     -fx-background-position: center;
 }

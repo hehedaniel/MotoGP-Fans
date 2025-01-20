@@ -1,5 +1,5 @@
 #paneDatosPiloto{
-    -fx-background-image: url('FondoBanderaCuadros.png');
+    -fx-background-image: url('../../assets/FondoBanderaCuadros.png');
     -fx-background-position: center;
 }
 
